@@ -4,17 +4,6 @@ const TOKEN = '887769333:AAG6wgH5qLiNlmzPKYhoIkHmBBkaHLjt1WA';
 
 const bot = new TelegramBot(TOKEN, { polling: true });
 
-bot.onText(/\/echo (.+)/, (msg, match) => {
-
-const chatId = msg.chat.id;
-const resp = match[1];
-
-bot.sendMessage(chatId, resp);
-});
-
-})
-
-
 var questions = [
   {
     title:'Сколько параметров можно передать функции ?',
