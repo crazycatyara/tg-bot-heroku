@@ -17,9 +17,9 @@ var options = {
 var options1 = {
   reply_markup: JSON.stringify({
     inline_keyboard: [
-      [{ text: 'Кнопка 1', callback_data: '0_1' }],
-      [{ text: 'Кнопка 2', callback_data: '0_2' }],
-      [{ text: 'Кнопка 3', callback_data: 'text 3' }]
+      [{ text: 'Кнопка 1', callback_data: '1_1' }],
+      [{ text: 'Кнопка 2', callback_data: '2_2' }],
+      [{ text: 'Кнопка 3', callback_data: '2_3' }]
     ]
   })
 };
