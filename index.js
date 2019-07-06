@@ -18,4 +18,3 @@ bot.onText(/\/start_test/, function (msg, match) {
   bot.sendMessage(msg.chat.id, 'Выберите любую кнопку:', options);
 });
 
-bot.action('1', (ctx) => ctx.editMessageText('Awesome'));
