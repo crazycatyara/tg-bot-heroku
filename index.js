@@ -14,7 +14,7 @@ var options = {
   })
 };
 
-var options1 = {
+//var options1 = {
   reply_markup: JSON.stringify({
     inline_keyboard: [
       [{ text: 'Кнопка 1', callback_data: '1_1' }],
@@ -28,7 +28,7 @@ bot.onText(/\/start_test/, function (msg, match) {
   bot.sendMessage(msg.chat.id, 'Выберите любую кнопку:', options);
 });
 
-bot.on('callback_query', function (msg) {
+// bot.on('callback_query', function (msg) {
   var answer = msg.data.split('_'); // Делим ответ на две части, превратив в массив. Первый элемент номер вопроса, второй будет вариант ответа.
   var index = answer[0]; // Получаем номер вопроса
   var button = answer[1]; // И вариант ответа
