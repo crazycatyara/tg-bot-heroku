@@ -1,4 +1,4 @@
-const TelegramBot = require('node-telegram-bot-api');
+п»їconst TelegramBot = require('node-telegram-bot-api');
 
 const TOKEN = '887769333:AAG6wgH5qLiNlmzPKYhoIkHmBBkaHLjt1WA';
 
@@ -21,13 +21,13 @@ bot.sendMessage(chatId, 'Massage');
 var options = {
   reply_markup: JSON.stringify({
     inline_keyboard: [
-      [{ text: 'Кнопка 1', callback_data: '1' }],
-      [{ text: 'Кнопка 2', callback_data: 'data 2' }],
-      [{ text: 'Кнопка 3', callback_data: 'text 3' }]
+      [{ text: 'РљРЅРѕРїРєР° 1', callback_data: '1' }],
+      [{ text: 'РљРЅРѕРїРєР° 2', callback_data: 'data 2' }],
+      [{ text: 'РљРЅРѕРїРєР° 3', callback_data: 'text 3' }]
     ]
   })
 };
 
 bot.onText(/\/start_test/, function (msg, match) {
-  bot.sendMessage(msg.chat.id, 'Выберите любую кнопку:', options);
+  bot.sendMessage(msg.chat.id, 'Р’С‹Р±РµСЂРёС‚Рµ Р»СЋР±СѓСЋ РєРЅРѕРїРєСѓ:', options);
 });
