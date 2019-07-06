@@ -13,6 +13,7 @@ bot.onText(/\/kek/, (msg, match) => {
 			{
 				text: 'KEKS',
 				callback_data:'KEKS'
+				if 
 			},
 						{
 				text: 'SHRECK',
@@ -21,16 +22,10 @@ bot.onText(/\/kek/, (msg, match) => {
 			{
 				text: 'SES',
 				callback_data:'SES'
+				bot.sendMessage(chatId, 'Что выбереш')
 			}
 		]
 		]
 		}
 	});
 });
-
-bot.on('callback_query', query =>{
-	const id = query.message.chat.id;
-
-	bot.sendMessage(chatId, 'Что выбереш');
-})
-		
