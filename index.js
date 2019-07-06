@@ -30,7 +30,7 @@ bot.onText(/\/kek/, (msg, match) => {
 
 bot.on('callback_query', query =>{
 	const id = query.message.chat.id;
-	
-	request('shrek11')
+
+	bot.sendMessage(chatId, 'Что выбереш');
 })
 		
