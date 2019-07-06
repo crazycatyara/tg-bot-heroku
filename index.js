@@ -21,10 +21,11 @@ bot.onText(/\/kek/, (msg, match) => {
 			{
 				text: 'SES',
 				callback_data:'SES'
-				bot.sendMessage(chatId, 'Что выбереш');
+				
 			}
 		]
 		]
 		}
 	});
 });
+bot.sendMessage(chatId, 'Что выбереш');
