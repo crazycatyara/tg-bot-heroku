@@ -1,7 +1,7 @@
-﻿var TelegramBot = require('node-telegram-bot-api');
-var TOKEN = '887769333:AAG6wgH5qLiNlmzPKYhoIkHmBBkaHLjt1WA';
+﻿const TelegramBot = require('node-telegram-bot-api');
+const TOKEN = '887769333:AAG6wgH5qLiNlmzPKYhoIkHmBBkaHLjt1WA';
 
-var bot = new TelegramBot(TOKEN, { polling: true });
+const bot = new TelegramBot(TOKEN, { polling: true });
 
 bot.onText(/\/kek/, (msg, match) => {
 	
@@ -27,4 +27,10 @@ bot.onText(/\/kek/, (msg, match) => {
 		}
 	});
 });
+
+bot.on('callback_query', query =>{
+	const id = query.message.chat.id;
+	
+	request('shrek11')
+})
 		
