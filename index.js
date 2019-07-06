@@ -24,5 +24,5 @@ bot.on('callback_query', function (msg) {
   // Если присланный вариант совпадает с вариантом из массива
   if (questions[index].right_answer==button) {
     bot.sendMessage(msg.from.id, 'Ответ верный ✅');
-  }
-}
+  };
+};
