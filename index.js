@@ -28,4 +28,3 @@ bot.onText(/\/kek/, (msg, match) => {
 		}
 	});
 });
-bot.sendMessage(chatId, 'Что выбереш');
