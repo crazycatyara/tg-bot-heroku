@@ -11,3 +11,9 @@ const resp = match[1];
 
 bot.sendMessage(chatId,resp);
 });
+
+bot.on('message', (msg) => {
+const chatId = msg.chat.id;
+
+bot.sendMessage(chatId, 'Massage');
+})
